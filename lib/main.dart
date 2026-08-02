@@ -1,3 +1,6 @@
+import 'package:day_butler/pages/day_butler_matrix/day_butler_matrix_binding.dart';
+import 'package:day_butler/pages/day_butler_matrix/day_butler_matrix_view.dart';
+import 'package:day_butler/pages/day_butler_people/day_butler_people_set.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -72,7 +75,7 @@ class DayButlerApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light(),
         getPages: Butler,
-        initialRoute: '/tab',
+        initialRoute: '/',
         builder: (context, child) => GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
@@ -83,6 +86,14 @@ class DayButlerApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Butler = [
+  GetPage(
+    name: '/',
+    page: () => const DayButlerMatrixView(),
+    binding: DayButlerMatrixBinding(),
+    transition: _t,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
   GetPage(
     name: '/tab',
     page: () => const DayButlerTabView(),
@@ -96,6 +107,13 @@ List<GetPage<dynamic>> Butler = [
     name: '/people',
     page: () => const DayButlerPeopleView(),
     binding: DayButlerPeopleBinding(),
+    transition: _t,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
+  GetPage(
+    name: '/person/set',
+    page: () => const DayButlerPeopleSet(),
     transition: _t,
     popGesture: true,
     preventDuplicates: false,

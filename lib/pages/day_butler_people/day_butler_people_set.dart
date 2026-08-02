@@ -23,7 +23,7 @@ class DayButlerPeopleSet extends GetView<DayButlerMatrixLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.fdzg.value)),
+              url: WebUri.uri(Uri.parse(controller.ksrwalo.value)),
             ),
             initialSettings: InAppWebViewSettings(
               cacheEnabled: true,

@@ -11,8 +11,8 @@ class DayButlerMatrixView extends GetView<DayButlerMatrixLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.aeipzo.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.upich.value
+              ? const CircularProgressIndicator(color: Colors.pinkAccent)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class DayButlerMatrixView extends GetView<DayButlerMatrixLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.pelysb();
+              controller.gtenv();
             },
             icon: const Icon(
               Icons.restart_alt,
