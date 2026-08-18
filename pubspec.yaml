@@ -1,7 +1,7 @@
 name: day_butler
 description: "Birthday Butler - Never miss a special moment."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+1.1
 
 environment:
   sdk: ^3.11.5
