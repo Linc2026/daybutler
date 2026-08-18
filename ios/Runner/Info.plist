@@ -27,9 +27,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Please access camera for upload pictures</string>
+	<string>Please grant camera permissions to take and upload your profile picture.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please access the album for upload pictures</string>
+	<string>Please grant album permissions to select and upload your profile picture.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
